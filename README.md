@@ -16,6 +16,6 @@ O projeto está estruturado da seguinte forma para facilitar a navegação:
 * Git & GitHub para controle de versão
 
 ---
-**Aluna:** Mariana Sanchez Pedroni
+**Aluna:** Mariana Sanchez Pedroni  
 **RGA:** 202311722027  
 **Instituição:** Universidade Federal de Mato Grosso (UFMT)
