@@ -6,13 +6,14 @@ Este repositório contém as atividades e materiais desenvolvidos durante a disc
 
 O projeto está estruturado da seguinte forma para facilitar a navegação:
 
-* **`atividades-aulasX/`**: Contém os códigos desenvolvidos durante cada aula prática.
+* **`atividades-aulaX/`**: Contém os códigos desenvolvidos durante cada aula prática.
 * **`aulas/`**: Documentos de apoio e materiais teóricos fornecidos em sala.
+* **`trabalhoX`**: Diretório especifíco para os trabalhos práticos realizados ao longo do semestre.
 * **`README.md`**: Guia principal do repositório.
 
 ## 🚀 Tecnologias Utilizadas
 
-* HTML5 / CSS3
+* HTML5 / CSS3 / Javascript
 * Git & GitHub para controle de versão
 
 ---
