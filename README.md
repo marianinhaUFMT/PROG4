@@ -8,7 +8,7 @@ O projeto está estruturado da seguinte forma para facilitar a navegação:
 
 * **`atividades-aulaX/`**: Contém os códigos desenvolvidos durante cada aula prática.
 * **`aulas/`**: Documentos de apoio e materiais teóricos fornecidos em sala.
-* **`trabalhoX`**: Diretório especifíco para os trabalhos práticos realizados ao longo do semestre.
+* **`trabalhoX/`**: Diretório especifíco para os trabalhos práticos realizados ao longo do semestre.
 * **`README.md`**: Guia principal do repositório.
 
 ## 🚀 Tecnologias Utilizadas
