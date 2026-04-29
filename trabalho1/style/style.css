@@ -14,7 +14,6 @@
     --cor-11: rgba(255, 255, 255, 0.05);
  
     --bg-color: #f5f0e0;
-    --bg-secundario: #ede8d0;
     --header-color: var(--cor-1);
     --navbar-color: var(--cor-0);
     --dropdown-bg-color: var(--cor-0);
@@ -28,7 +27,6 @@
     --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     --secao-titulo-cor: var(--cor-1);
     --badge-bg: var(--cor-1);
-    --badge-text: var(--cor-8);
     --detalhe-bg: rgba(14, 81, 53, 0.06);
   
 }
@@ -94,9 +92,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0 20px;
-    background-color: var(--navbar-color);
 }
-
 
 .item-direita {
     margin-left: auto;
@@ -119,15 +115,10 @@ body {
     padding: 0;
 }
 
-.menu-principal li {
-    display: block;
-}
-
 .menu-principal a i {
     margin-right: 8px;
     vertical-align: middle;
 }
-
 
 .dropdown-content {
     display: none; 
@@ -136,7 +127,6 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 
 .dropdown-content li a {
     color: var(--nav-text-color);
@@ -154,11 +144,10 @@ body {
     display: block;
 }
 
-
 /* ==== BOTAO DARK MODE ==== */
 #toggle-dark {
     background: none;
-    border: 1px var(--nav-text-color);
+    border: none;
     color: var(--nav-text-color);
     padding: 5px 10px;
     border-radius: 5px;
@@ -199,7 +188,6 @@ main {
 }
 
 /* ==== TITULOS DE PAGINA ==== */
-
 .pagina-titulo {
     font-family: 'Cinzel', serif;
     font-size: 2.2rem;
@@ -268,7 +256,7 @@ body.dark-mode .pagina-subtitulo {
     gap: 10px;
     border-left: 4px solid var(--top-info-border-color);
     background-color: var(--top-info-bg-color);
-    border-radius: 6px 6px;
+    border-radius: 6px;
 }
 
 #top-info img {
@@ -276,14 +264,12 @@ body.dark-mode .pagina-subtitulo {
     height: 50px;
 }
 
-
 #map-container iframe {
     width: 100%;
     height: 800px;
     border: none;
     border-radius: 10px;
 }
-
 
 /* ==== TABELA DE PERSONAGENS (personagens.html) ==== */
 .tabela {
@@ -332,13 +318,11 @@ body.dark-mode .pagina-subtitulo {
     letter-spacing: 1px;
 }
 
-
 /* ==== CARDS SOBRE (paginaPrincipal.html) ==== */
 .sobre-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 20px;
-    margin-bottom: 48px;
 }
 
 .sobre-card {
@@ -347,7 +331,6 @@ body.dark-mode .pagina-subtitulo {
     box-shadow: var(--card-shadow);
     border-radius: 10px;
     padding: 24px;
-    margin-bottom: 48px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .sobre-card:hover {
@@ -383,7 +366,6 @@ body.dark-mode .pagina-subtitulo {
     box-shadow: var(--card-shadow);
     border-radius: 10px;
     padding: 24px;
-    margin-bottom: 48px;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
@@ -424,7 +406,7 @@ body.dark-mode .pagina-subtitulo {
     display: inline-block;
     background-color: var(--badge-bg);
     margin-bottom: 20px;
-    color: var(--badge-text);
+    color: var(--cor-8);
     padding: 6px 12px;
     border-radius: 4px;
     transition: background-color 0.2s, transform 0.3s;
@@ -531,6 +513,140 @@ body.dark-mode .pagina-subtitulo {
     margin-left: 80px;
 }
 
+.timeline-ano {
+    font-size: 0.78rem;
+    opacity: 0.6;
+    font-style: italic;
+    margin-left: 4px;
+}
+
+.lista-cronologica {
+    list-style: none;
+    counter-reset: item;
+    padding: 0;
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.lista-cronologica li {
+    counter-increment: item;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 14px 16px 14px 52px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+ 
+.lista-cronologica li:hover {
+    transform: translateX(4px);
+    box-shadow: var(--card-shadow);
+}
+ 
+/* número do counter como bolinha */
+.lista-cronologica li::before {
+    content: counter(item);
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    background: var(--cor-1);
+    color: var(--cor-8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.78rem;
+    font-weight: bold;
+}
+ 
+.lista-cronologica li strong {
+    font-size: 0.95rem;
+    color: var(--secao-titulo-cor);
+}
+ 
+.lista-cronologica li p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.75;
+    line-height: 1.5;
+    font-style: normal;
+
+}
+
+.grid-ramos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.ramo-derrota, .ramo-crianca, .ramo-adulto{
+    background: var(--card-bg);
+    border: 2px solid var(--card-border);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.ramo-derrota h3, .ramo-crianca h3, .ramo-adulto h3{
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    color: var(--secao-titulo-cor);
+    text-align: center;
+}
+
+.ramo-derrota p, .ramo-crianca p, .ramo-adulto p{
+    font-family: 'Cinzel', serif;
+    font-size: 0.9rem;
+    opacity: 0.65;
+    font-style: italic;
+    margin: 0 0 14px;
+}
+
+.ramo-derrota { border-color: rgba(160, 50, 50, 0.4); }
+.ramo-crianca { border-color: rgba(94, 126, 62, 0.4); }
+.ramo-adulto  { border-color: rgba(14, 34, 81, 0.4); }
+ 
+.ramo-derrota .lista-cronologica li::before { background: rgba(160, 50, 50, 0.8); }
+.ramo-crianca .lista-cronologica li::before { background: rgba(94, 126, 62, 0.9); }
+.ramo-adulto  .lista-cronologica li::before { background: rgba(37, 92, 219, 0.4); }
+
+.jogos-separados {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 50px;
+}
+
+.jogos-separados a {
+    text-decoration: none;
+    color: var(--body-text-color);
+    background: var(--card-bg);
+    border: 1px solid var(--cor-6);
+    border-radius: 10px;
+    padding: 16px;
+    transition: all 0.3s ease;
+}
+
+.jogos-separados a:hover {
+    background-color: var(--cor-6);
+    color: var(--cor-9);
+    transform: translateY(-4px);
+}
+
+.jogos-separados span {
+    font-size: 1.2rem;
+    align-self: center;
+    color: var(--cor-6);
+}
 
 /* ==== BLOCKQUOTE (paginaPrincipal.html) ==== */
 #citacao {
@@ -555,11 +671,8 @@ body.dark-mode .pagina-subtitulo {
 
 #citacao button {
     position: absolute;
-    top: 50%;
     right: 20px;
-    transform: translateY(-50%);
-    padding: -80px 16px;
-    margin-left: auto;
+    top: 50px;
     background: none;
     border: none;
     color: var(--cor-6);
@@ -570,7 +683,7 @@ body.dark-mode .pagina-subtitulo {
 
 #citacao button:hover {
     color: var(--cor-4);
-    transform: translateY(-50%) scale(1.2);
+    transform: scale(1.2);
 }
 
 footer {
