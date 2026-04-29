@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interativo - Wiki Zelda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/trabalho1/style/style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="icon" type="image/x-icon" href="/trabalho1/assets/icone.ico">
+</head>
+<body>
+    <header id="header-principal">
+
+        <h1>O maior portal de Zelda!</h1>
+
+        <nav id="navbar-principal">
+            <ul class="menu-principal">
+                <li class="dropdown">
+                    <a href="paginaPrincipal.html"><i id="icone-lupa" class="fi fi-rr-search"></i>Explorar</a>
+                    <ul class="dropdown-content">
+                        <li><a href="paginaPrincipal.html"><i id="icone-home" class="fi fi-rr-home"></i>Página Principal</a></li>
+                        <li><a href="mapaInterativo.html"><i id="icone-mapa" class="fi fi-rr-map"></i>Mapa Interativo</a></li>
+                        <li><a href="linhaTemporal.html"><i id="icone-linhatempo" class="fi fi-rr-timeline-arrow"></i>Linha Temporal</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="jogos.html"><i id="icone-controle" class="fi fi-rr-gamepad"></i>Jogos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="jogos.html#TLoZ">The Legend of Zelda</a></li>
+                        <li><a href="jogos.html#ALttP">A Link to the Past</a></li>
+                        <li><a href="jogos.html#OoT">Ocarina of Time</a></li>
+                        <li><a href="jogos.html#MM">Majora's Mask</a></li>
+                        <li><a href="jogos.html#WW">The Wind Waker</a></li>
+                        <li><a href="jogos.html#TP">Twilight Princess</a></li>
+                        <li><a href="jogos.html#SW">Skyward Sword</a></li>
+                        <li><a href="jogos.html#BotW">Breath of the Wild</a></li>
+                        <li><a href="jogos.html#TotK">Tears of the Kingdom</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="personagens.html"><i id="icone-globo" class="fi fi-rr-world"></i>Mundo</a>
+                    <ul class="dropdown-content">
+                        <li><a href="personagens.html#personagens">Personagens</a></li>
+                        <li><a href="personagens.html#inimigos">Inimigos</a></li>
+                    </ul>
+                </li>
+
+                <li class="item-direita">
+                    <button id="toggle-dark" title="Mudar tema">
+                        <i id="icone-tema" class="fi fi-rr-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div id="map-container">
+            <iframe src="https://zeldamaps.com/?game=BotW" frameborder="0"></iframe>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; Mariana Sanchez Pedroni</p>
+    </footer>
+
+</body>
+<script src="/trabalho1/js/script.js"></script>
+</html>
