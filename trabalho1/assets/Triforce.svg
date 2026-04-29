@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   width="100%"
+   height="100%"
+   viewBox="0 0 220 220"
+   id="svg2">
+  <defs
+     id="defs8">
+    <linearGradient
+       id="orange-brown">
+      <stop
+         id="stop4668"
+         style="stop-color:#ffcc00;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop4670"
+         style="stop-color:#c19a00;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="White-Yellow">
+      <stop
+         id="stop3175"
+         style="stop-color:#ffffba;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3177"
+         style="stop-color:#ffff00;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <radialGradient
+       cx="157.84048"
+       cy="150.89961"
+       r="43.125"
+       fx="157.84048"
+       fy="150.89961"
+       id="radialGradient3179"
+       xlink:href="#White-Yellow"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.8655797,0,20.87085)" />
+    <radialGradient
+       cx="56.490795"
+       cy="172.72972"
+       r="43.125"
+       fx="56.490795"
+       fy="172.72972"
+       id="radialGradient3187"
+       xlink:href="#White-Yellow"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.8655797,0,20.87085)" />
+    <radialGradient
+       cx="114.31902"
+       cy="58.69239"
+       r="43.125"
+       fx="114.31902"
+       fy="58.69239"
+       id="radialGradient3195"
+       xlink:href="#White-Yellow"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1,0,0,0.8655797,0,9.2308933)" />
+    <linearGradient
+       x1="150.62578"
+       y1="150.62578"
+       x2="208.1227"
+       y2="205.42331"
+       id="linearGradient4672"
+       xlink:href="#orange-brown"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1,0,0,1,320,0)" />
+  </defs>
+  <use
+     transform="translate(50,-87)"
+     id="use2400"
+     x="0"
+     y="0"
+     width="220"
+     height="220"
+     xlink:href="#use2398" />
+  <use
+     transform="translate(-100,0)"
+     id="use2398"
+     x="0"
+     y="0"
+     width="220"
+     height="220"
+     xlink:href="#Back-Tri" />
+  <polygon
+     points="160,110 210,196.6 110,196.6 160,110 "
+     transform="matrix(-1,0,0,1,320,0)"
+     id="Back-Tri"
+     style="fill:url(#linearGradient4672);fill-opacity:1" />
+  <path
+     d="M 66.875,106 C 95.625,106 124.375,106 153.125,106 C 138.75,81.114583 124.375,56.229167 110,31.34375 C 95.625,56.229167 81.25,81.114583 66.875,106 z"
+     id="Power"
+     style="fill:url(#radialGradient3195);fill-opacity:1" />
+  <path
+     d="M 16.875,192.59375 C 45.625,192.59375 74.375,192.59375 103.125,192.59375 C 88.75,167.70833 74.375,142.82292 60,117.9375 C 45.625,142.82292 31.25,167.70833 16.875,192.59375 z"
+     id="Courage"
+     style="fill:url(#radialGradient3187);fill-opacity:1" />
+  <path
+     d="M 116.875,192.59375 C 145.625,192.59375 174.375,192.59375 203.125,192.59375 C 188.75,167.70833 174.375,142.82292 160,117.9375 C 145.625,142.82292 131.25,167.70833 116.875,192.59375 z"
+     id="Wisdom"
+     style="fill:url(#radialGradient3179);fill-opacity:1" />
+</svg>
