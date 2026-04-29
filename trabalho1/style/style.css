@@ -542,6 +542,11 @@ body.dark-mode .pagina-subtitulo {
     position: relative;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.lista-cronologica a {
+    text-decoration: none;
+    color: var(--body-text-color);
+}
  
 .lista-cronologica li:hover {
     transform: translateX(4px);
