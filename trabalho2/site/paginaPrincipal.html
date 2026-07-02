@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki Zelda</title>
+    <link rel="stylesheet" href="/trabalho2/style/style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/marianinhaUFMT/PROG4/refs/heads/main/trabalho1/assets/icone.ico">
+</head>
+<body>
+    <header id="header-principal">
+        
+        <h1>O maior portal de Zelda!</h1>
+
+        <nav id="navbar-principal">
+            <ul class="menu-principal">
+                <li class="dropdown">
+                    <a href="paginaPrincipal.html"><i id="icone-lupa" class="fi fi-rr-search"></i>Explorar</a>
+                    <ul class="dropdown-content">
+                        <li><a href="paginaPrincipal.html"><i id="icone-home" class="fi fi-rr-home"></i>Página Principal</a></li>
+                        <li><a href="mapaInterativo.html"><i id="icone-mapa" class="fi fi-rr-map"></i>Mapa Interativo</a></li>
+                        <li><a href="linhaTemporal.html"><i id="icone-linhatempo" class="fi fi-rr-timeline-arrow"></i>Linha Temporal</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="jogos.html"><i id="icone-controle" class="fi fi-rr-gamepad"></i>Jogos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="jogos.html#TLoZ">The Legend of Zelda</a></li>
+                        <li><a href="jogos.html#ALttP">A Link to the Past</a></li>
+                        <li><a href="jogos.html#OoT">Ocarina of Time</a></li>
+                        <li><a href="jogos.html#MM">Majora's Mask</a></li>
+                        <li><a href="jogos.html#WW">The Wind Waker</a></li>
+                        <li><a href="jogos.html#TP">Twilight Princess</a></li>
+                        <li><a href="jogos.html#SW">Skyward Sword</a></li>
+                        <li><a href="jogos.html#BotW">Breath of the Wild</a></li>
+                        <li><a href="jogos.html#TotK">Tears of the Kingdom</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="personagens.html"><i id="icone-globo" class="fi fi-rr-world"></i>Mundo</a>
+                    <ul class="dropdown-content">
+                        <li><a href="personagens.html#personagens">Personagens</a></li>
+                        <li><a href="personagens.html#inimigos">Inimigos</a></li>
+                    </ul>
+                </li>
+
+                <li class="item-direita">
+                    <button id="toggle-dark" title="Mudar tema">
+                        <i id="icone-tema" class="fi fi-rr-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <section id="banner">
+        <div class="banner-content">
+            <img src="https://raw.githubusercontent.com/marianinhaUFMT/PROG4/c1a43b49f66ac2053329fb9c6140965000fcdb1b/trabalho1/assets/Triforce.svg" alt="triforce" class="triforce">
+            <h2 class="banner-titulo">The Legend of Zelda</h2>
+            <p class="banner-subtitulo">Um enciclopédia feita por fã, para fãs</p>
+        </div>
+    </section>
+
+    <section id="conteudos">
+        <main>
+            <section id="introducao">
+                <h2 class="pagina-titulo">Início</h2>
+                <div id="top-info"> <img src="https://raw.githubusercontent.com/marianinhaUFMT/PROG4/c1a43b49f66ac2053329fb9c6140965000fcdb1b/trabalho1/assets/Triforce.svg" alt="Triforce — três triângulos dourados sobrepostos, símbolo da série Zelda">
+                    <p>
+                        A <strong>Wiki Zelda</strong> é uma enciclopédia colaborativa dedicada a tudo relacionado à série <em>The Legend of Zelda</em>. Aqui você encontra informações sobre jogos, personagens, inimigos, locais e muito mais. Explore à vontade!
+                    </p>
+                    <img src="https://raw.githubusercontent.com/marianinhaUFMT/PROG4/c1a43b49f66ac2053329fb9c6140965000fcdb1b/trabalho1/assets/Triforce.svg" alt="Triforce - símbolo da série Zelda">
+                </div>
+            </section>
+
+            <section id="sobre">
+                <h2 class="secao-titulo">Sobre a Série</h2>
+                <div class="sobre-grid">
+                    <div class="sobre-card">
+                        <h3>Franquia Lendária <i class="fi fi-rr-sword"></i></h3>
+                        <p>Criada por <strong>Shigeru Miyamoto</strong> e <strong>Takashi Tezuka</strong>, a série <em>The Legend of Zelda</em> estreou em 1986 no Famicom Disk System no Japão e nunca parou de encantar gerações inteiras de jogadores ao redor do mundo.</p>
+                    </div>
+                    <div class="sobre-card">
+                        <h3>Reino de Hyrule <i class="fi fi-rr-castle"></i></h3>
+                        <p>A maioria dos jogos se passa no reino de <strong>Hyrule</strong>, uma terra rica em lendas, dungeons, povos e criaturas mágicas. Cada jogo expande o universo com novos reinos, personagens e ameaças ao equilíbrio do mundo.</p>
+                    </div>
+                    <div class="sobre-card">
+                        <h3>A Triforce <i class="fi fi-rr-triangle"></i></h3>
+                        <p>No centro de tudo está a <strong>Triforce</strong>, uma relíquia sagrada deixada pelas deusas Din, Nayru e Farore. Composta por três triângulos que representam Poder, Sabedoria e Coragem, ela é o principal objeto de desejo do vilão Ganon.</p>
+                    </div>
+                    <div class="sobre-card">
+                        <h3>Jogos Icônicos <i class="fi fi-rr-gamepad"></i></h3>
+                        <p>Com mais de <strong>20 títulos principais</strong>, a série inclui clássicos como <em>Ocarina of Time</em>, aclamado como um dos maiores jogos de todos os tempos, e títulos modernos como <em>Breath of the Wild</em> e <em>Tears of the Kingdom</em>, que revolucionaram o mundo aberto.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="destaques">
+                <h2 class="secao-titulo">Destaques da Wiki</h2>
+                <div class="destaques-grid">
+                    <a href="/trabalho2/site/jogos.html" class="destaque-card"><i class="fi fi-rr-gamepad"></i>
+                        <h3>Jogos</h3>
+                        <p>Conheça todos os títulos principais da franquia, com data de lançamento, plataformas e sinopse.</p>
+                        <span class="destaque-link">Ver Jogos →</span>
+                    </a>
+
+                    <a href="/trabalho2/site/personagens.html" class="destaque-card"><i class="fi-rr-world"></i>
+                        <h3>Personagens</h3>
+                        <p>De Link e Zelda a Ganondorf e aliados, descubra quem habita o universo de Hyrule.</p>
+                        <span class="destaque-link">Ver personagens →</span>
+                    </a>
+
+                    <a href="/trabalho2/site/linhaTemporal.html" class="destaque-card"><i class="fi fi-rr-timeline-arrow"></i>
+                        <h3>Linha Temporal</h3>
+                        <p>Entenda como os jogos se conectam nas três linhas do tempo oficiais da Nintendo.</p>
+                        <span class="destaque-link">Ver linha temporal →</span>
+                    </a>
+                    <a href="/trabalho2/site/mapaInterativo.html" class="destaque-card"><i class="fi-rr-map"></i>
+                        <h3>Mapa Interativo</h3>
+                        <p>Explore o mapa de diferentes jogos da série e descubra cada canto de Hyrule.</p>
+                        <span class="destaque-link">Explorar mapa →</span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="citacao">
+                <blockquote class="card-blockquote">
+                    <p>"Courage need not be remembered, for it is never forgotten."</p>
+                    <cite>—— Princesa Zelda, Breath of the Wild</cite>
+                    <audio id="som-zelda" src="/trabalho2/assets/sound_effect.mp3" preload="auto"></audio>
+                    <button id="toggle-cursor" title="Mudar cursor"><i class="fi fi-rr-sword"></i></button>
+                </blockquote>
+            </section>
+
+        </main>
+
+    </section>
+
+    <footer>
+        <p>&copy; Mariana Sanchez Pedroni</p>
+    </footer>
+</body>
+<script src="/trabalho2/js/script.js"></script>
+</html>
