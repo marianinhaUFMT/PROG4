@@ -16,7 +16,7 @@ async function bootstrap() {
   const config = new DocumentBuilder()
     .setTitle('Wiki Zelda API')
     .setDescription('API backend da Wiki Zelda — Programação IV')
-    .setVersion('1.0')
+    .setVersion('1.1')
     .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, config);
@@ -24,9 +24,10 @@ async function bootstrap() {
 
   await app.listen(3000);
 
-  console.log('✅ Servidor rodando em: http://localhost:3000');
-  console.log('📖 Swagger disponível em: http://localhost:3000/api');
+  console.log('Servidor rodando em: http://localhost:3000');
+  console.log('Documentação no Swagger disponível em: http://localhost:3000/api');
 
   open('http://localhost:3000/api'); // abre o Swagger no browser automaticamente
+  open('http://127.0.0.1:5500/trabalho2/site/paginaPrincipal.html'); // abre a aplicação no browser automaticamente
 }
 bootstrap();
