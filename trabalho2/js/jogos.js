@@ -65,6 +65,20 @@ async function carregarJogos() {
             .map((jogo, index) => renderJogo(jogo, index))
             .join('');
 
+        if (window.location.hash) {
+            const idAlvo = window.location.hash;
+            
+            setTimeout(() => {
+                const elementoAlvo = document.querySelector(idAlvo);
+                if (elementoAlvo) {
+                    elementoAlvo.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                }
+            }, 500);
+        }
+
     } catch (err) {
         console.error('Erro ao carregar jogos:', err);
         document.getElementById('jogos-indice').innerHTML = '';
