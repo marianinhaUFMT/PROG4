@@ -401,17 +401,24 @@ body.dark-mode .pagina-subtitulo {
 }
 
 /* ==== CARDS JOGOS (jogos.html) ==== */
+.jogos-indice {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;      
+    margin-bottom: 25px;
+}
+
 .jogos-indice a {
     text-decoration: none;
     display: inline-block;
     background-color: var(--badge-bg);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     color: var(--cor-8);
     padding: 6px 12px;
     border-radius: 4px;
     transition: background-color 0.2s, transform 0.3s;
     font-size: 0.85rem;
-    
+
 }
 .jogos-indice a:hover {
     background-color: var(--cor-6);
@@ -447,6 +454,7 @@ body.dark-mode .pagina-subtitulo {
     border-radius: 20px;
     font-size: 0.78rem;
     margin-bottom: 12px;
+    margin-right: 4px;
     font-weight: bold;
 }
 
