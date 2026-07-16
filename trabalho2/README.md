@@ -103,7 +103,7 @@ POST /auth/register
 {
   "nome": "Mariana",
   "email": "mariana@email.com",
-  "senha": "123456"
+  "senha": "12345678"
 }
 ```
 
@@ -112,7 +112,7 @@ POST /auth/register
 POST /auth/login
 {
   "email": "mariana@email.com",
-  "senha": "123456"
+  "senha": "12345678"
 }
 ```
 Resposta:
@@ -240,19 +240,6 @@ backend/
 ├── .env.example
 └── README.md
 ```
-
----
-
-## 🛡️ Decisões Técnicas
-
-| Decisão | Motivo |
-|---|---|
-| SQLite com `better-sqlite3` | Zero configuração de servidor, ideal para desenvolvimento |
-| `synchronize: true` | TypeORM cria/atualiza tabelas automaticamente (apenas em dev) |
-| GET público, escrita protegida | Wiki é leitura pública; edição exige autenticação |
-| `simple-array` para plataformas e aparições | Evita complexidade de tabelas relacionais desnecessárias |
-| `simple-enum` para tipo do personagem | Compatível com SQLite, que não tem tipo ENUM nativo |
-| Senha nunca retornada nas respostas | Segurança: hash bcrypt fica apenas no banco |
 
 ---
 
